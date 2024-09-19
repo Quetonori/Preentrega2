@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(62, 79, 134);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.contenedor div{
+    border: rgb(22, 52, 224) 2px solid;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.contenedor div img{
+    max-width: 100%;
+    height: auto;
+}
+.footer{
+    background-color: #1e61c5;
+    padding:1.2rem;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
+    
+    }
+}
+@media screen and (max-width: 480px){
+    .contenedor{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
+    
+    }
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "imagen texto texto"
+    "desarrollador comunidad usuarios";
+}
+.imagen { 
+    grid-area: imagen;
+    display: block;
+    height: 500px;
+    width: 700px;
+}
+.texto { 
+    grid-area: texto; 
+}
+.desarrollador { 
+    display: block;
+    grid-area: desarrollador;
+}
+.imagen-desarrollador {
+    grid-area: auto; 
+    display: block;
+    margin: 0 auto;
+}
+.texto-desarrollador { 
+    grid-area: auto; 
+    display: block;
+}
+.comunidad {  
+    display: block;
+    grid-area: comunidad;
+}
+.imagen-comunidad { 
+    grid-area: auto; 
+    display: block;
+    height: 10px;
+    width: 10px;
+}
+.texto-comunidad { 
+    grid-area: auto; 
+}
+.usuarios {  
+    display: grid;
+    grid-area: auto;
+}
+.imagen-usuarios { 
+    grid-area: auto; 
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+.texto-usuarios { 
+    grid-area: auto; 
+    display: block;
+}
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
+    
+    }
+}
+@media screen and (max-width: 480px){
+    .container{
+        grid-template-rows: 3fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+}
+.tamano_formulario{
+    width: 500px;
+    margin:10px auto;
+    border:rgb(27, 30, 238) 3px solid;
+    padding:20px;
+}
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.videojuego img{
+    width: 250px;
+    opacity: 0.5;
+    border: double gray 2px;
+}
+.videojuego img:hover{
+    opacity: 1;
+    border: double gray;
+    border-radius: 10px;
+    }
+    @media screen and (max-width: 768px){
+        .conteiner{
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr ;
+        
+        }
+    }
+    @media screen and (max-width: 480px){
+        .conteiner{
+            grid-template-rows: 3fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        
+        }
+    }

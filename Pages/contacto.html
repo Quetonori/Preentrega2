@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/Fcebook.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/Instagram.png">
+    <title>Motores Graficos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/Pages/videojuegos.html">videojuegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/Pages/contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <h1 class="bg-primary text-light text-center p-3">Contacto</h1>
+    </header>
+    <main>
+        <h2 class="text-center text-light">Queremos saber tu opinion</h2>
+        <p class="text-center text-light">Unete a la comunidad de videojuegos mas activa de latinoamerica, para ello precisamos que nos dejes tus datos creando una cuenta virtual con la que podras interactuar con tdos nuestros usuarios y desarrolladores experimentados.</p>
+        <form class="tamano_formulario">
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-light">ID o nombre de usuario</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label text-light">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <div id="emailHelp" class="form-text text-light mb-4">No compartas tu contraseña con extraños</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="comentario" class="text-light">Deje su comentario</label>
+            <br>
+            <textarea name="comentario" id=""></textarea>
+        </div>
+            <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label text-light" for="exampleCheck1">He leído y acepto los <a href="https://www.crytek.com/terms">términos y condiciones</a></label>
+            </div>
+            <button type="submit" class="btn btn-info">Enviar</button>
+        </form>
+    </main>
+    <h2 class="text-light">Preguntas frecuentes</h2>
+    <br>
+    <div class="accordion acordion-flush size2" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Cual es el valor del motor CryEngine?
+        </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <strong>CryEngine es completamente gratuito.</strong> Queremos enfocarnos en una experiencia unica para nuestros usuarios, por lo que decidimos dejar todas las herramientas disponibles desde el inicio.
+        </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Que sistemas operativos soporta CryEngine?
+        </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <strong>Windows y Linux</strong>
+        </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Cuales son sus requisitos?
+        </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+                <li>WIndows vista</li>
+                <li>Procesador: Intel dual</li>
+                <li>Memoria: 4 GB de RAM</li>
+                <li>DirectX: Version 11</li>
+                <li>Almacenamiento: 8GB de espacio disponible</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <h4 class="text-light">Siguenos en nuestras redes!</h4> 
+        <div class="redes">
+            <a href="https://www.instagram.com/"><img class="redes" src="/img/Fcebook.png" alt="Logo de facebook"> </a>
+            <a href="https://www.instagram.com/"><img class="redes" src=    "/img/Instagram.png" alt="Logo de instagram"> </a>
+        </div>
+        <br>
+        <section>
+            <h4 class="text-light text-center">Para mas informacion:</h4>
+            <h4 class="text-light text-center">Mail 💌 Crytek@gmail.com</h4>
+            <h4 class="text-light text-center">Teléfono ☎ 2944501926</h4>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>        
+</body>
+</html>
