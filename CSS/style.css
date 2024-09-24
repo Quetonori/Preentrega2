@@ -61,19 +61,22 @@ body{
 }
 .texto { 
     grid-area: texto; 
+    transform: translate(0px,100px);
 }
 .desarrollador { 
-    display: block;
+    display: flex;
     grid-area: desarrollador;
 }
 .imagen-desarrollador {
     grid-area: auto; 
     display: block;
     margin: 0 auto;
+    transform: translate(-100px, 100px);
 }
-.texto-desarrollador { 
+.texto-desarrollador {
     grid-area: auto; 
     display: block;
+    transform: translate(-100px,100px);
 }
 .comunidad {  
     display: block;
@@ -81,12 +84,14 @@ body{
 }
 .imagen-comunidad { 
     grid-area: auto; 
-    display: block;
-    height: 10px;
-    width: 10px;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    transform: translate(-100px,100px);
 }
 .texto-comunidad { 
     grid-area: auto; 
+    transform: translate(-100px,);
 }
 .usuarios {  
     display: grid;
@@ -94,13 +99,15 @@ body{
 }
 .imagen-usuarios { 
     grid-area: auto; 
-    display: block;
-    width: 10px;
-    height: 10px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    transform: translate(300px,-400px);
 }
 .texto-usuarios { 
     grid-area: auto; 
     display: block;
+    transform: translate(400px,-630px);
 }
 @media screen and (max-width: 768px){
     .container{
